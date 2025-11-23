@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-      "node": ">=20.9.0 <21"
+    "node": ">=20.9.0 <21"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "node_modules/.bin/next start",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
     "next": "16.0.3",
